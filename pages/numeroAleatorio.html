@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Aleatorio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/numeroAleatorio.js" defer></script>
+    <style>
+        .info-text {
+            text-align: center;
+            border: none;
+            min-height: auto;
+            padding: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Adivina el número</h1>
+        <p class="info-text">Estoy pensando en un número entre 1 y 25. ¿Puedes adivinarlo?</p>
+        <div class="flex-container">
+            <button onclick="generarNumero()">Generar número</button>
+            <button onclick="verificarNumero()">Adivinar número</button>
+        </div>
+        <p id="idResultado"></p>
+        <a href="../index.html">Regresar</a>
+    </div>
+</body>
+</html>
